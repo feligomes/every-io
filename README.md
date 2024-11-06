@@ -2,6 +2,9 @@
 
 A simple and intuitive task management application built with React that allows users to track tasks across different stages of completion.
 
+## Live Demo
+The application is deployed and can be accessed at: [https://feligomes.github.io/every-io/](https://feligomes.github.io/every-io/)
+
 ## Features
 
 - Three-column Kanban-style board layout:
@@ -67,5 +70,7 @@ src/
    - Use the right arrow to move tasks forward
    - Use the left arrow to move tasks backward
    - Arrows are disabled when tasks reach the first or last column
+
+
 
 
