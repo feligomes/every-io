@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Add basename to handle GitHub Pages subdirectory
 ReactDOM.render(
   <React.StrictMode>
     <App />
