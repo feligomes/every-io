@@ -54,7 +54,7 @@ src/
 │   ├── TaskItem.tsx    # Individual task component
 │   └── TaskColumn.tsx  # Column component for task states
 ├── types.tsx          # TypeScript interfaces and types
-└── App.tsx            # Main application componentn
+└── App.tsx            # Main application component
 ```
 
 ## Usage
