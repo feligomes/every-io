@@ -17,16 +17,25 @@ export const TaskColumn: React.FC<TaskColumnProps> = ({
 
   return (
     <div
+      role="region"
+      aria-labelledby={`${status}-column-heading`}
       style={{
         flex: 1,
         padding: "20px",
         minWidth: "250px",
       }}
     >
-      <h2>{status}</h2>
-      {columnTasks.map((task) => (
-        <TaskItem key={task.id} task={task} moveTask={moveTask} />
-      ))}
+      <h2 id={`${status}-column-heading`}>{status}</h2>
+      <ul
+        aria-label={`${status} tasks`}
+        style={{ listStyle: 'none', padding: 0, margin: 0 }}
+      >
+        {columnTasks.map((task) => (
+          <li key={task.id}>
+            <TaskItem task={task} moveTask={moveTask} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

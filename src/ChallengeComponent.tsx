@@ -48,7 +48,11 @@ export const ChallengeComponent: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div 
+      role="main"
+      aria-label="Task management board"
+      style={{ padding: "20px" }}
+    >
       <div
         style={{
           display: "flex",
@@ -77,10 +81,12 @@ export const ChallengeComponent: React.FC = () => {
         }}
       >
         <input
+          id="new-task"
           type="text"
           value={newTaskText}
           onChange={(e) => setNewTaskText(e.target.value)}
           placeholder="Add Task"
+          aria-label="Add new task"
           style={{
             padding: "12px",
             borderRadius: "4px",
@@ -90,6 +96,7 @@ export const ChallengeComponent: React.FC = () => {
         />
         <button
           type="submit"
+          aria-label="Add new task"
           style={{
             backgroundColor: "#007bff",
             color: "white",

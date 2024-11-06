@@ -24,6 +24,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({ task, moveTask }) => {
       <button
         onClick={() => moveTask(task.id, "left")}
         disabled={task.status === TaskStatus.Todo}
+        aria-label={`Move ${task.text} to previous column`}
         style={{
           backgroundColor:
             task.status === TaskStatus.Todo ? "#ffcccb" : "#dc3545",
@@ -38,17 +39,13 @@ export const TaskItem: React.FC<TaskItemProps> = ({ task, moveTask }) => {
       >
         ←
       </button>
-      <span
-        style={{
-          flex: 1,
-          padding: "0 5px",
-        }}
-      >
+      <span style={{ flex: 1, padding: "0 5px" }}>
         {task.text}
       </span>
       <button
         onClick={() => moveTask(task.id, "right")}
         disabled={task.status === TaskStatus.Done}
+        aria-label={`Move ${task.text} to next column`}
         style={{
           backgroundColor:
             task.status === TaskStatus.Done ? "#90EE90" : "#28a745",

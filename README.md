@@ -115,6 +115,28 @@ src/
    - Use the left arrow to move tasks backward
    - Arrows are disabled when tasks reach the first or last column
 
+## Testing
+
+The application includes several types of tests:
+
+### Unit Tests
+Located in `src/App.test.tsx`, these tests verify core functionality:
+- Column rendering and task movement
+- Task addition and state management
+- Keyboard navigation functionality
+
+To run the tests:
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage report
+npm test -- --coverage
+
+# Run tests in watch mode
+npm test -- --watch
+```
+
 
 
 
