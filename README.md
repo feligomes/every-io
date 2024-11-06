@@ -25,7 +25,47 @@ A simple and intuitive task management application built with React that allows 
 ### Installation
 
 1. Clone the repository:
-
 ```bash
-git clone [your
-</rewritten_file>
+git clone https://github.com/feligomes/every-io.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd every-io
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
+npm start
+```
+
+5. Open your browser and navigate to `http://localhost:3000`
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── TaskItem.tsx    # Individual task component
+│   └── TaskColumn.tsx  # Column component for task states
+├── types.tsx          # TypeScript interfaces and types
+└── App.tsx            # Main application component
+```
+
+## Usage
+
+1. **Adding Tasks**
+   - Use the input form at the bottom to add new tasks
+   - New tasks automatically appear in the "Todo" column
+
+2. **Moving Tasks**
+   - Use the right arrow to move tasks forward
+   - Use the left arrow to move tasks backward
+   - Arrows are disabled when tasks reach the first or last column
+
+
